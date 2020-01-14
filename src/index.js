@@ -59,7 +59,8 @@ export default {
         bus.$off(event, callback)
       },
       getRoutes: () => Routes.slice(),
-      cleanRoutes: () => navigator.reset()
+      cleanRoutes: () => navigator.reset(),
+      record: (to, from, replaceFlag) => navigator.record(to, from, replaceFlag)
     }
   }
 }
